@@ -1,0 +1,78 @@
+.trend {
+  padding: 0 0px 0 16px;
+  overflow-x: hidden;
+}
+.slick-slide {
+  margin-left: 15px;
+}
+.trend-book {
+  position: absolute;
+  top: 10px;
+  background: #10141e;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-radius: 50%;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trend-book-img {
+  transform: rotate(1deg);
+}
+.trend-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.3125px;
+  color: #ffffff;
+}
+.whole-trends {
+  overflow-x: scroll;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.trend-div-movie {
+  position: relative;
+}
+.trenddes {
+  position: relative;
+  bottom: 50px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  left: 16px;
+}
+.trend-movie-title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 16px;
+}
+.trend-img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.whole-trends::-webkit-scrollbar {
+  display: none;
+}
+.trend {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trend {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trend::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,18 @@
+header {
+  background-color: #161d2f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+}
+.avatar {
+  width: 24px;
+  height: 24px;
+}
+nav {
+  display: flex;
+  gap: 24px;
+}
+.navlist {
+  cursor: pointer;
+}
