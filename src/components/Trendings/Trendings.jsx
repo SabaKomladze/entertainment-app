@@ -22,7 +22,7 @@ function Trend(props) {
     draggable: true,
     swipe: true,
     swipeToSlide: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     infinite: true,
     speed: 1000,
     gap: "20px",
@@ -52,7 +52,7 @@ function Trend(props) {
             <div key={index} className="trend-div-movie">
               <h2 className="trend-movie-title">{dataObj.title}</h2>
               <img
-                src={dataObj.thumbnail.trending.small}
+                src={dataObj.thumbnail.trending.large}
                 alt={dataObj.title}
                 className="trend-img"
               />
@@ -103,6 +103,24 @@ function Trend(props) {
 const StyledSlider = styled(Slider)`
   .slick-track {
     display: flex;
+  }
+
+  .slick-dots {
+    display: none;
+  }
+  .slick-slide {
+    outline: none;
+    margin-left: 15px;
+
+    @media (max-width: 767px) {
+      /* Mobile */
+      min-width: 240px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* Tablet */
+      min-width: 340px;
+    }
   }
 `;
 

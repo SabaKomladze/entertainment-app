@@ -6,6 +6,23 @@ function SignUp(props) {
   const [emailInvalid, setEmailInvalid] = useState(false);
 
   const [repPass, setRepPass] = useState("");
+  function changeToLogin() {
+    if (props.pass === "") {
+      props.setSignUp(true);
+    } else {
+      if (props.pass === repPass) {
+        props.setSignUp(false);
+      }
+    }
+    if (emailRegex.test(props.email)) {
+      setEmailInvalid(false);
+      props.setSignUp(false);
+    } else {
+      setEmailInvalid(true);
+      props.setSignUp(true);
+    }
+    props.setSignUp(false);
+  }
 
   return (
     <div className="login">
@@ -30,41 +47,20 @@ function SignUp(props) {
           onChange={(e) => setRepPass(e.target.value)}
         />
 
-        <button
-          type="button"
-          className="login-btn"
-          onClick={(e) => {
-            e.preventDefault();
-            if (props.pass === "") {
-              props.setSignUp(true);
-            } else {
-              if (props.pass === repPass) {
-                props.setSignUp(false);
-              }
-            }
-            if (emailRegex.test(props.email)) {
-              setEmailInvalid(false);
-            } else {
-              setEmailInvalid(true);
-              props.setSignUp(true);
-            }
-          }}
-        >
+        <button type="button" className="login-btn" onClick={changeToLogin}>
           Create an account
         </button>
 
         <p className="suggest-signup">
           Alread have an account?{"  "}
-          <Link to="/">
-            <span
-              className="span-signup"
-              onClick={() => {
-                props.setSignUp(false);
-              }}
-            >
-              Login
-            </span>
-          </Link>
+          <span
+            className="span-signup"
+            onClick={() => {
+              props.setSignUp(false);
+            }}
+          >
+            Login
+          </span>
         </p>
       </div>
     </div>

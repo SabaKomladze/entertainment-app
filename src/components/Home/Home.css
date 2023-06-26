@@ -1,5 +1,19 @@
-.home {
-  background-color: #10141e;
-}
-.compo-home {
+@media (min-width: 1440px) {
+  .header-right {
+    display: flex;
+  }
+  .rightSide {
+    margin-left: 32px;
+  }
+  header {
+    width: 96px;
+    height: 960px;
+    flex-direction: column;
+    z-index: 2;
+  }
+  nav {
+    flex-direction: column;
+    position: relative;
+    bottom: 300px;
+  }
 }

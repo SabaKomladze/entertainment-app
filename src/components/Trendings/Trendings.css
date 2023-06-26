@@ -2,9 +2,7 @@
   padding: 0 0px 0 16px;
   overflow-x: hidden;
 }
-.slick-slide {
-  margin-left: 15px;
-}
+
 .trend-book {
   position: absolute;
   top: 10px;
@@ -31,8 +29,11 @@
 }
 .whole-trends {
   overflow-x: scroll;
+  overflow-y: hidden;
   margin-top: 16px;
   cursor: pointer;
+  max-height: 300px;
+  max-width: 1700px;
 }
 .trend-div-movie {
   position: relative;
@@ -60,6 +61,7 @@
 .trend-img {
   border-radius: 8px;
   width: 100%;
+  height: auto;
 }
 
 .whole-trends::-webkit-scrollbar {
@@ -75,4 +77,10 @@
 }
 .trend::-webkit-scrollbar {
   display: none;
+}
+@media (min-width: 768px) {
+  .trend {
+    padding-left: 25px;
+    margin-right: 25px;
+  }
 }

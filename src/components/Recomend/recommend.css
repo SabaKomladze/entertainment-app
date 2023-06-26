@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 .recom {
-  padding: 24px 16px 0;
+  padding: 24px 16px 38px;
   align-content: center;
 }
 .movie-icon {
@@ -23,7 +23,7 @@
 }
 .all-movie-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 4%;
@@ -50,4 +50,17 @@
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.75;
+}
+@media (min-width: 768px) {
+  .recommend-title {
+    font-size: 32px;
+  }
+  .recom {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1440px) {
+  .recom {
+    padding-left: 25px;
+  }
 }

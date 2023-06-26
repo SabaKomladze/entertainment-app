@@ -18,3 +18,8 @@
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+@media (min-width: 768px) {
+  .search {
+    padding-left: 25px;
+  }
+}

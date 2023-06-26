@@ -8,6 +8,7 @@ header {
 .avatar {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 nav {
   display: flex;
@@ -15,4 +16,19 @@ nav {
 }
 .navlist {
   cursor: pointer;
+}
+@media (min-width: 1440px) {
+  header {
+    flex-direction: column;
+    position: relative;
+    left: 32px;
+    top: 32px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
 }
